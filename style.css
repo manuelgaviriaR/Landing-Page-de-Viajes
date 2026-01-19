@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+}
+.logo{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: rgb(255, 136, 0);
+}
+.barnav ul{
+    display: flex;
+}
+.barnav ul li{
+    padding-left: 20px;
+    list-style: none;    
+}
+.lugares{
+    float: right;
+    width: 300px;
+    margin-top: 0;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+}
+.header-content .text-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-block h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: rgb(255, 136, 0);
+}
+
+.primero {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.boton{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #000;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    max-width: 80px;
+}
+
+.boton1:hover {
+    background-color: #8400ff;
+}
+
+.lugares {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.section1{
+    display: flex;
+}
+.hospedaje, .vuelo, .equipaje{
+    max-width: 200px;
+    border: 0.5px solid rgba(255, 254, 254, 0.333);
+    border-radius: 8px;
+    padding: 20px 40px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 0 5px;
+    margin: auto;
+    max-height: 150px;
+    }
+
+h3, h2{
+    color: rgb(255, 136, 0);
+}
+.servicios{
+    background-color: rgb(245, 242, 237);
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px;
+    border: 0.5px solid #dbdbdb;
+    border-radius: 5px;
+    max-width: 82%;
+    margin: auto;
+    margin-top: 60px;
+}
+.boton2, .boton3 {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #000;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    max-width: 80px;
+    margin-top: 20px;
+}
+.imagen{
+    width: 450px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.nosotros{
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: 70px;
+    padding: 35px;
+}
+.nosotros .sobre-nosotros {
+    justify-content: center;
+    padding-top: 25px;
+}
+.container {
+    background-color: antiquewhite; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.section {
+    display: inline-block;
+    width: 45%; 
+    padding: 15px;
+    vertical-align: top;
+}
+
+.boton4, .boton5{
+    margin-top: 20px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cccccc;
+}
+.foot--text{
+    display: inline-block
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .barnav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #555; 
+        color: #fff;
+    }
+    
+    .menu-toggle:checked ~ .barnav {
+        display: block;
+    }
+
+    .barnav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .barnav li {
+        border-bottom: 1px solid #555;
+    }
+    
+    .barnav a {
+        display: block;
+        padding: 15px 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .section1{
+        flex-direction: column;
+    }
+
+    .hospedaje .vuelo .equipaje{
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .servicios{
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .box{
+        margin-top: 25px;
+    }
+
+    .nosotros{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .imagen{
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .imagen--piscina{
+        margin-top: 30px;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    .section{
+        width: 100%;
+        display: block;
+        padding: 40px 0;
+    }
+
+        .foot {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .foot--text, .foot--social {
+        padding: 10px 0;
+    }
+
+    .foot--social{
+        flex-direction: row;
+    }
+}
+
